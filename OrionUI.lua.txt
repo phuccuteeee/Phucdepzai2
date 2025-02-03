@@ -1,0 +1,99 @@
+-- The best Orion lib UI that is stable for mobile and pc
+
+
+local Lib = loadstring(game:HttpGet(('https://pastebin.com/raw/4h9kqp3F')))()
+
+
+-- Notification
+
+Lib:MakeNotification({
+	Name = "Welcome",
+	Content = "This Orion mod was made by the_king.78",
+	Image = "rbxassetid://8834748103",
+	Time = 10
+})
+
+
+-- Window
+
+local Window = Lib:MakeWindow({
+    Name = "KingKM", --Name your UI/hub name
+    IntroText = "OrionKM", --Intro Text name change the name to your or just comment it if you want to use default name
+    IntroIcon = "rbxassetid://8834748103", --Intro Icon change the id to your icon or just comment it if you want to use default icon
+    OpenIcon = "rbxassetid://8834748103", --Open Icon change the id to your icon jd or just comment it if you want to use the default icon
+    HidePremium = false,
+    SaveConfig = true,
+    ConfigFolder = "Data" --Comment this if you don't want to save data and make SaveConfig false
+})
+
+
+-- Tabs
+local Tab = Window:MakeTab({
+    Name = "This is a tab", --Tab name
+    Icon = "rbxassetid://18903913150", -- Tab icon comment this if you want to use default icon
+    PremiumOnly = false -- Make it true if you want this tab to be for premium only
+})
+
+local Tab2 = Window:MakeTab({
+    Name = "This is another tab", --Tab name
+    Icon = "rbxassetid://18903913150", -- Tab icon comment this if you want to use default icon
+    PremiumOnly = false -- Make it true if you want this tab to be for premium only
+})
+
+-- Sections
+
+local Section = Tab:AddSection({
+    Name = "Section" --Section name
+})
+
+local Section2 = Tab2:AddSection({
+    Name = "Section2" --Section name
+})
+
+-- Buttons
+
+Tab:AddButton({
+    Name = "Button", --Button name
+    Callback = function()
+-- Add your button code here
+    end
+})
+
+Tab2:AddButton({
+    Name = "Button2", --Button name
+    Callback = function()
+-- Add your button code here
+    end
+})
+
+-- Toggles
+
+Tab:AddToggle({
+    Name = "This is a toggle", -- Toggle name
+    Default = false, -- Change to true if you want the toggle to be true when using the script
+    Callback = function(Value)
+        if Value == true then
+            print("Toggle true")
+        else
+            print("Toggle false")
+        end
+    end -- A example of toggle code 
+})
+
+Tab2:AddToggle({
+    Name = "This is a toggle", -- Toggle name
+    Default = false, -- Change to true if you want the toggle to be true when using the script
+    Callback = function(Value)
+        if Value == true then
+            print("Toggle true")
+        else
+            print("Toggle false")
+        end
+    end -- A example of toggle code 
+})
+
+
+-- Check Orion main GitHub page for more things: https://github.com/shlexware/Orion/blob/main/Documentation.md
+
+
+Lib:Init() -- Do not remove this is to finish your script
