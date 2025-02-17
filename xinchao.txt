@@ -2196,61 +2196,7 @@ function isnil(v202)
     return v202 == nil ;
 end
 local function v20(v203)
-    return math.floor(tonumber(v203) + 0.5);
-end
-Number = math.random(1, 1000000);
-function UpdateIslandMirageESP()
-    for v457, v458 in pairs(game:GetService("Workspace")['_WorldOrigin'].Locations:GetChildren()) do
-        pcall(function()
-            if MirageIslandESP then
-                if (v458.Name == "Mirage Island") then
-                    if not v458:FindFirstChild("NameEsp") then
-                        local v1270 = Instance.new("BillboardGui", v458);
-                        v1270.Name = "NameEsp";
-                        v1270.ExtentsOffset = Vector3.new(0, 1, 0);
-                        v1270.Size = UDim2.new(1, 200, 1, 30);
-                        v1270.Adornee = v458;
-                        v1270.AlwaysOnTop = true;
-                        local v1276 = Instance.new("TextLabel", v1270);
-                        v1276.Font = "Code";
-                        v1276.FontSize = "Size14";
-                        v1276.TextWrapped = true;
-                        v1276.Size = UDim2.new(1, 0, 1, 0);
-                        v1276.TextYAlignment = "Top";
-                        v1276.BackgroundTransparency = 1;
-                        v1276.TextStrokeTransparency = 0.5;
-                        v1276.TextColor3 = Color3.fromRGB(80, 245, 245);
-                    else
-                        v458['NameEsp'].TextLabel.Text = v458.Name .. "   \n" .. v20((game:GetService("Players").LocalPlayer.Character.Head.Position - v458.Position).Magnitude / 3) .. " M" ;
-                    end
-                end
-            elseif v458:FindFirstChild("NameEsp") then
-                v458:FindFirstChild("NameEsp"):Destroy();
-            end
-        end);
-    end
-end
-function UpdateAuraESP()
-    for v459, v460 in pairs(game:GetService("Workspace").NPCs:GetChildren()) do
-        pcall(function()
-            if AuraESP then
-                if (v460.Name == "Master of Enhancement") then
-                    if not v460:FindFirstChild("NameEsp") then
-                        local v1286 = Instance.new("BillboardGui", v460);
-                        v1286.Name = "NameEsp";
-                        v1286.ExtentsOffset = Vector3.new(0, 1, 0);
-                        v1286.Size = UDim2.new(1, 200, 1, 30);
-                        v1286.Adornee = v460;
-                        v1286.AlwaysOnTop = true;
-                        local v1292 = Instance.new("TextLabel", v1286);
-                        v1292.Font = "Code";
-                        v1292.FontSize = "Size14";
-                        v1292.TextWrapped = true;
-                        v1292.Size = UDim2.new(1, 0, 1, 0);
-                        v1292.TextYAlignment = "Top";
-                        v1292.BackgroundTransparency = 1;
-                        v1292.TextStrokeTransparency = 0.5;
-                        v1292.TextColor3 = Color3.fromRGB(80, 245, 245);
+    returne
                     else
                         v460['NameEsp'].TextLabel.Text = v460.Name .. "   \n" .. v20((game:GetService("Players").LocalPlayer.Character.Head.Position - v460.Position).Magnitude / 3) .. " M" ;
                     end
@@ -2677,10 +2623,10 @@ if game:GetService("ReplicatedStorage").Effect.Container:FindFirstChild("Respawn
     game:GetService("ReplicatedStorage").Effect.Container.Respawn:Destroy();
 end
 v16.Home:AddButton({
-    Title = "Youtube",
+    Title = "discord",
     Description = "Tại Đây",
     Callback = function()
-        setclipboard("https://youtube.com/@thanhdzso1");
+        setclipboard("https://discord.gg/UvTmK4Gt");
     end
 });
 _G.FastAttackStrix_Mode = "Super Fast Attack";
@@ -2699,9 +2645,9 @@ local v48 = v16.Main:AddDropdown("DropdownSelectWeapon", {
     Title = "Vũ Khí",
     Description = "",
     Values = {
-        "Melee",
-        "Sword",
-        "Blox Fruits"
+        "võ",
+        "kiếm",
+        "trái ác quỷ"
     },
     Multi = false,
     Default = 1
