@@ -1,4 +1,4 @@
-shared.LoaderTitle = "Đăng Ký Kênh Văn Thành IOS";
+shared.LoaderTitle = "hello và xin cháo";
 shared.LoaderKeyFrames = {
     [1] = {
         1,
@@ -93,16 +93,16 @@ local v7 = CreateObject("ImageLabel", {
     Name = "UserImage",
     Parent = v6,
     BackgroundTransparency = 1,
-    Image = "rbxassetid://110365071974573",
+    Image = "rbxassetid://97366350332458",
     Position = UDim2.new(0, 15, 0, 10),
     Size = UDim2.new(0, 50, 0, 50)
 });
 v4(25, v7);
 local v8 = CreateObject("TextLabel", {
-    Name = "UserName",
+    Name = "phucdepzai",
     Parent = v6,
     BackgroundTransparency = 1,
-    Text = "Youtube: Văn Thành IOS",
+    Text = "My Discord: ",
     Position = UDim2.new(0, 75, 0, 10),
     Size = UDim2.new(0, 200, 0, 50),
     Font = Enum.Font.GothamBold,
